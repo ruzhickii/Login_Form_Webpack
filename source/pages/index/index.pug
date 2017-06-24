@@ -1,6 +1,27 @@
 extends ../base
 block title
-    | Index page
+     Index page
 block main
-    h1 Традиционная проверка
-    img(src=require("./webpack.svg") width="100")
+    div.test
+        h1 Проверка
+        img(src=require("./webpack.svg") width="100")
+    div.parent
+
+        div
+            img(src=require("./webpack.svg"))
+            span swedavia
+            span swedish airports
+        form
+            label(for='email') Username
+            input(type='email' name='login' required)
+
+            label(for='password') Password
+            input(type='password' name='password' required)
+
+            button(type='submit') Отправить
+
+            span
+                a(href='#') Forgot password?
+        div Powered by
+
+            a(href='#') Cygate
