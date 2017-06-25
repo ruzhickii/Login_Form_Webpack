@@ -54,6 +54,7 @@ form{
   margin: 0 auto;
   background: #fff;
   padding: 15px;
+  border-radius: 3px;
 
   &:hover {
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -118,7 +119,7 @@ span:nth-child(6) {
 }
 
 footer{
-  width: 354px;
+  //width: 354px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
@@ -128,6 +129,10 @@ footer{
   a{
     color: #bcbcbc;
   }
+}
+
+@media screen and (device-width: 320px) {
+  form {width: 250px;}
 }
 
 
