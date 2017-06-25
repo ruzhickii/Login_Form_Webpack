@@ -5,14 +5,15 @@ block main
     div.test
         h1 Проверка
         img(src=require("./webpack.svg") width="100")
-    div.parent
+    div
 
-        div.header
-            img(src=require("./webpack.svg"))
+        div
+            header
+                img(src=require("./webpack.svg"))
 
-            span swedavia
+                span swedavia
 
-            span swedish airports
+                span swedish airports
 
         form
             label(for='email') Username
@@ -25,6 +26,7 @@ block main
 
             span
                 a(href='#') Forgot password?
-        div Powered by
+
+        footer Powered by
 
             a(href='#') Cygate
